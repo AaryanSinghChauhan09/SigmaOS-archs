@@ -9,6 +9,7 @@ A single Cloudflare Worker serves the page and both portraits — no build step,
 - `index.html` — the page
 - `worker.mjs` — Worker entry: serves the HTML, the portraits, redirects www → apex
 - `omarch-king.jpeg` / `omarch-queen.jpeg` — Their Majesties (uploaded as `king.jpeg` / `queen.jpeg` modules)
+- `og.jpeg` — 1200×630 Open Graph card (both monarchs, gold divider)
 
 ## Deploy
 
@@ -21,7 +22,8 @@ curl -X PUT "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/workers/s
   -F 'worker.mjs=@worker.mjs;type=application/javascript+module;filename=worker.mjs' \
   -F 'index.html=@index.html;type=text/plain;filename=index.html' \
   -F 'king.jpeg=@omarch-king.jpeg;type=application/octet-stream;filename=king.jpeg' \
-  -F 'queen.jpeg=@omarch-queen.jpeg;type=application/octet-stream;filename=queen.jpeg'
+  -F 'queen.jpeg=@omarch-queen.jpeg;type=application/octet-stream;filename=queen.jpeg' \
+  -F 'og.jpeg=@og.jpeg;type=application/octet-stream;filename=og.jpeg'
 ```
 
 Long may they reign. Long may they compile.
