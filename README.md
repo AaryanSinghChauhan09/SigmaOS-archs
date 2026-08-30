@@ -9,7 +9,16 @@ A single Cloudflare Worker serves the page and both portraits — no build step,
 - `index.html` — the page
 - `worker.mjs` — Worker entry: serves the HTML, the portraits, redirects www → apex
 - `omarch-king.jpeg` / `omarch-queen.jpeg` — Their Majesties (uploaded as `king.jpeg` / `queen.jpeg` modules)
+- `bin/serve` — local preview with live reload
 - `og.jpeg` — 1200×630 Open Graph card (both monarchs, gold divider)
+
+## Develop
+
+```sh
+bin/serve          # http://localhost:3000 (pass a port to change it)
+```
+
+Serves the same routes as the Worker, straight from disk. Saving `index.html` reloads the browser.
 
 ## Deploy
 
