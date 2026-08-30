@@ -1,8 +1,9 @@
 import html from "./index.html";
 import king from "./king.jpeg";
 import queen from "./queen.jpeg";
+import og from "./og.jpeg";
 
-const IMAGES = { "/king.jpeg": king, "/queen.jpeg": queen };
+const IMAGES = { "/king.jpeg": king, "/queen.jpeg": queen, "/og.jpeg": og };
 
 export default {
   fetch(request) {
