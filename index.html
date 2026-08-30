@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Omarchs — King &amp; Queen of the Computer</title>
+<meta name="description" content="The King and Queen of the Computer in the land of Omarchy. Long may they reign. Long may they compile.">
+<meta property="og:title" content="The Omarchs">
+<meta property="og:description" content="The King and Queen of the Computer in the land of Omarchy.">
+<meta property="og:image" content="https://omarchs.fyi/king.jpeg">
+<meta property="og:url" content="https://omarchs.fyi">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%91%91%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..700&family=Cormorant+Garamond:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #d9a93f;
+    --gold-bright: #f3cf7a;
+    --purple: #7a3ff2;
+    --ink: #06030c;
+    --text: #cfc4e8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--ink);
+    color: var(--text);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 1.5rem 3rem;
+    background-image:
+      radial-gradient(ellipse 70% 45% at 50% 38%, rgba(122, 63, 242, 0.16), transparent 70%),
+      radial-gradient(ellipse 40% 25% at 50% 90%, rgba(217, 169, 63, 0.07), transparent 70%);
+  }
+  h1 {
+    font-family: Cinzel, Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(2.6rem, 8vw, 5rem);
+    letter-spacing: 0.14em;
+    background: linear-gradient(180deg, var(--gold-bright) 20%, var(--gold) 55%, #9a6f1e 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 60px rgba(217, 169, 63, 0.25);
+  }
+  .rule {
+    width: min(22rem, 60vw);
+    height: 1px;
+    margin: 1.4rem auto 1.5rem;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    position: relative;
+  }
+  .rule::after {
+    content: "◆";
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--gold);
+    font-size: 0.55rem;
+    background: var(--ink);
+    padding: 0 0.6rem;
+  }
+  .subtitle {
+    font-size: clamp(1.15rem, 3vw, 1.5rem);
+    font-style: italic;
+    color: var(--text);
+    max-width: 34em;
+  }
+  .thrones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    margin: 3rem 0 2.75rem;
+  }
+  figure { max-width: min(420px, 88vw); }
+  .frame {
+    padding: 10px;
+    border: 1px solid rgba(217, 169, 63, 0.55);
+    outline: 1px solid rgba(217, 169, 63, 0.18);
+    outline-offset: 5px;
+    background: linear-gradient(180deg, rgba(217, 169, 63, 0.08), rgba(122, 63, 242, 0.06));
+    box-shadow: 0 0 45px rgba(122, 63, 242, 0.18), 0 25px 60px rgba(0, 0, 0, 0.6);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  figure:hover .frame {
+    transform: translateY(-6px);
+    box-shadow: 0 0 70px rgba(122, 63, 242, 0.32), 0 35px 70px rgba(0, 0, 0, 0.65);
+  }
+  .frame img { display: block; width: 100%; height: auto; }
+  figcaption { margin-top: 1.3rem; }
+  figcaption strong {
+    display: block;
+    font-family: Cinzel, Georgia, serif;
+    font-weight: 600;
+    font-size: 1.35rem;
+    letter-spacing: 0.22em;
+    color: var(--gold-bright);
+  }
+  figcaption span {
+    display: block;
+    margin-top: 0.35rem;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #9d8fc2;
+  }
+  .proclamation {
+    font-size: clamp(1.2rem, 3vw, 1.45rem);
+    font-style: italic;
+    color: var(--gold-bright);
+    letter-spacing: 0.03em;
+  }
+  footer {
+    margin-top: 3.5rem;
+    font-size: 1.05rem;
+  }
+  footer a {
+    color: #a789ff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(167, 137, 255, 0.35);
+    padding-bottom: 1px;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  footer a:hover { color: var(--gold-bright); border-color: var(--gold); }
+</style>
+</head>
+<body>
+  <h1>THE OMARCHS</h1>
+  <div class="rule"></div>
+  <p class="subtitle">The King &amp; Queen of the Computer, in the land of Omarchy.</p>
+
+  <div class="thrones">
+    <figure>
+      <div class="frame"><img src="/king.jpeg" alt="The King of Omarchy — a crowned monarch in black and gold armor traced with circuitry" width="1254" height="1254"></div>
+      <figcaption>
+        <strong>THE KING</strong>
+        <span>Defender of the Keyboard · Lord of the Tiling Realms</span>
+      </figcaption>
+    </figure>
+    <figure>
+      <div class="frame"><img src="/queen.jpeg" alt="The Queen of Omarchy — a crowned monarch in black and gold armor traced with circuitry" width="1254" height="1254"></div>
+      <figcaption>
+        <strong>THE QUEEN</strong>
+        <span>Keeper of the Kernel · Sovereign of the Silent R</span>
+      </figcaption>
+    </figure>
+  </div>
+
+  <p class="proclamation">Long may they reign. Long may they compile.</p>
+
+  <footer><a href="https://omarchy.org">omarchy.org →</a></footer>
+</body>
+</html>
