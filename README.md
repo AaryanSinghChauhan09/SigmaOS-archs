@@ -1,4 +1,6 @@
-# Omarchs
+# SigmaOS Omarchs
+
+> Forked from omacom/omarchs (MIT). See `SIGMAOS_FORK.md`.
 
 The King & Queen of the Computer, in the land of [Omarchy](https://omarchy.org). Live at [omarchs.fyi](https://omarchs.fyi).
 
