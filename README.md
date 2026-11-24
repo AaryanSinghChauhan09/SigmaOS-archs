@@ -1,8 +1,8 @@
 # SigmaOS Omarchs
 
-> Forked from omacom/omarchs (MIT). See `SIGMAOS_FORK.md`.
+> Forked from SigmaOS/omarchs (MIT). See `SIGMAOS_FORK.md`.
 
-The King & Queen of the Computer, in the land of [Omarchy](https://omarchy.org). Live at [omarchs.fyi](https://omarchs.fyi).
+The King & Queen of the Computer, in the land of [SigmaOS](https://omarchy.org). Live at [omarchs.fyi](https://omarchs.fyi).
 
 A single Cloudflare Worker serves the page and both portraits — no build step, no bucket.
 
