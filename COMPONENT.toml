@@ -1,6 +1,6 @@
 [component]
-name = "omarchs"
-id = "sigmaos-omarchs"
+name = "sigmaos-archs"
+id = "sigmaos-archs"
 kind = "component"
 license = "GPL-3.0-or-later"
 
